@@ -2,9 +2,55 @@ import hidroguardImg from "../assets/imgs/projeto-hidroguard.png";
 import passaBolaImg from "../assets/imgs/projeto-passabola.png";
 import adaptaiImg from "../assets/imgs/projeto-adaptai.png";
 import coffeConnectImg from "../assets/imgs/projeto-coffeeconnect.png";
+import nasaLogoImg from "../assets/imgs/logo_nasa.png";
+import dataImg from "../assets/imgs/dados_imagem.png";
 
 export const Projects = () => {
   const projects = [
+    {
+      title: "Global Solution — Data Science",
+      desc: "Data Science project developed at FIAP using NASA FIRMS/VIIRS fire hotspot data from Brazil in 2024. The project explores temporal patterns, performs data preprocessing, outlier analysis, feature engineering and Machine Learning modeling to generate insights from environmental satellite data.",
+      tech: [
+        "Python",
+        "Pandas",
+        "Scikit-learn",
+        "Streamlit",
+        "Matplotlib",
+        "NASA FIRMS",
+        "Machine Learning",
+        "EDA",
+      ],
+      img: nasaLogoImg,
+      link: "https://github.com/Arriatea/Sprint-Data_Science",
+      details: [
+        "Analyzed over 1.9 million fire hotspot records from NASA FIRMS/VIIRS.",
+        "Performed exploratory data analysis, temporal analysis and outlier detection.",
+        "Built Machine Learning experiments using Python, Pandas and Scikit-learn.",
+        "Developed visual insights focused on environmental monitoring and data-driven decision making.",
+      ],
+    },
+    {
+      title: "Business Opening Forecast",
+      desc: "Machine Learning and analytics project based on a real technical case, adapted into an anonymized portfolio project. The solution forecasts business openings by city, segment and time period, combining exploratory analysis, feature engineering and predictive modeling.",
+      tech: [
+        "Python",
+        "Pandas",
+        "Scikit-learn",
+        "Streamlit",
+        "Random Forest",
+        "Machine Learning",
+        "Forecasting",
+        "EDA",
+      ],
+      img: dataImg,
+      link: "https://github.com/Arriatea/previsao-abertura-empresas",
+      details: [
+        "Built a forecasting pipeline using temporal features, lag variables and moving averages.",
+        "Trained and evaluated a Random Forest model for business opening prediction.",
+        "Used MAE and WMAPE to evaluate model performance.",
+        "Adapted the original case into a public portfolio project while preserving confidentiality.",
+      ],
+    },
     {
       title: "Flood Monitoring System",
       desc: "Developed by HidroGuard as a FIAP project, this system monitors flood levels in real time and alerts users to risk situations, detecting people in flooded areas to enable quick rescue actions.",
