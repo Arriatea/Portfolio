@@ -28,6 +28,11 @@ export const Sobre = () => {
           </p>
 
           <p>
+            I’m currently an intern at <span className="text-white font-medium">SafePlay</span>, a SaaS platform for managing
+            children’s play spaces, where I develop and maintain a <span className="text-white font-medium">Flutter/Dart</span> application.
+          </p>
+
+          <p>
             I’m currently taking the course <span className="text-white font-medium">“Artificial Intelligence with Real Applications”</span> by 
             <span className="text-white font-medium"> ESPX/Harvard</span>, while also completing programs at  
             <span className="text-white font-medium"> FIAP </span>and  

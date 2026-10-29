@@ -4,9 +4,32 @@ import adaptaiImg from "../assets/imgs/projeto-adaptai.png";
 import coffeConnectImg from "../assets/imgs/projeto-coffeeconnect.png";
 import nasaLogoImg from "../assets/imgs/logo_nasa.png";
 import dataImg from "../assets/imgs/dados_imagem.png";
+import syndLogoImg from "../assets/imgs/logo-synd.png";
 
 export const Projects = () => {
   const projects = [
+    {
+      title: "SYND — Desafio Next (1º lugar)",
+      desc: "Conversational intelligence tool for sales teams, built for the Desafio Next (FIAP × TOTVS), a 9-month challenge where teams solve a real problem proposed by a partner company. Our group, SYND, won 1st place. The tool turns meeting transcripts into structured commercial data, with confidence scoring and human validation.",
+      tech: [
+        "Python",
+        "Google ADK",
+        "Gemini",
+        "Java",
+        "Google Cloud Run",
+        "React",
+      ],
+      img: syndLogoImg,
+      contain: true,
+      link: null,
+      details: [
+        "Selected among the top 20 groups, then among the 6 groups taken to the Next fair, where the project was evaluated by professors, evaluators and people from the partner company.",
+        "Built AI agents with Google ADK and Gemini, deployed on Google Cloud Run.",
+        "Integrated the agents with a Java backend that triggers the processing of new meetings.",
+        "Confidence scoring routes uncertain outputs to human validation instead of treating them as facts.",
+        "Private repository, available on request.",
+      ],
+    },
     {
       title: "Global Solution — Data Science",
       desc: "Data Science project developed at FIAP using NASA FIRMS/VIIRS fire hotspot data from Brazil in 2024. The project explores temporal patterns, performs data preprocessing, outlier analysis, feature engineering and Machine Learning modeling to generate insights from environmental satellite data.",
@@ -78,7 +101,7 @@ export const Projects = () => {
       ],
     },
     {
-      title: "AdaptAI (In Progress)",
+      title: "AdaptAI",
       desc: "Winner of the Google Gen Ai Hackathon 2025, AdaptAI is an intelligent accessibility platform hosted on Google Cloud. It leverages AI to adapt websites dynamically for users with different accessibility needs, promoting inclusion through real-time interface personalization.",
       tech: [
         "Google Cloud",
@@ -95,11 +118,11 @@ export const Projects = () => {
         "Vertex AI and TensorFlow used for model training and interface adaptation.",
         "Firestore manages real-time user data and interaction preferences.",
         "Integrates OpenAI API for natural language understanding and user feedback.",
-        "Ongoing production development focused on accessibility and UX testing.",
+        "Currently in pilot phase, validating the solution with educational institutions.",
       ],
     },
     {
-      title: "Coffe Conect",
+      title: "CoffeeConnect",
       desc: "CoffeeConnect is an IoT-based system designed to monitor employee break times in real time within corporate environments. Built with ESP32, MQTT, and Node-RED, the solution tracks when users start or end a break through a physical button, visualizes the data on a live dashboard, and provides clear visual feedback using an RGB LED.",
       tech: [
        "Node-RED",
@@ -142,7 +165,9 @@ export const Projects = () => {
           >
             <img
               src={proj.img}
-              className="w-full h-48 object-cover border-b border-purple-500/20"
+              className={`w-full h-48 ${
+                proj.contain ? "object-contain p-6 bg-black/40" : "object-cover"
+              } border-b border-purple-500/20`}
             />
 
             <div className="p-6">
@@ -171,14 +196,16 @@ export const Projects = () => {
                 </ul>
               )}
 
-              <a
-                href={proj.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-purple-400 hover:text-purple-300 transition-colors flex items-center gap-1"
-              >
-                View Project →
-              </a>
+              {proj.link && (
+                <a
+                  href={proj.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-purple-400 hover:text-purple-300 transition-colors flex items-center gap-1"
+                >
+                  View Project →
+                </a>
+              )}
             </div>
           </div>
         ))}
