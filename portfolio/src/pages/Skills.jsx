@@ -6,16 +6,20 @@ export const Skills = () => {
 
   const skills = [
     { name: "Python", level: 90, category: "Backend" },
-    { name: "Machine Learning", level: 90, category: "AI/ML" },
-    { name: "Scikit-Learn (Sklearn)", level: 90, category: "AI/ML" },
+    { name: "Machine Learning", level: 85, category: "AI/ML" },
+    { name: "Scikit-Learn (Sklearn)", level: 85, category: "AI/ML" },
+    { name: "Pandas", level: 85, category: "AI/ML" },
+    { name: "Google ADK & Gemini", level: 70, category: "AI/ML" },
+    { name: "Google Cloud", level: 70, category: "Tools" },
+    { name: "FastAPI", level: 70, category: "Backend" },
+    { name: "SQL", level: 80, category: "Backend" },
+    { name: "Flutter", level: 75, category: "Mobile" },
+    { name: "Dart", level: 75, category: "Mobile" },
     { name: "React", level: 70, category: "Frontend" },
-    { name: "CSS", level: 72, category: "Frontend" },
-    { name: "JavaScript", level: 75, category: "Frontend" },
-    { name: "C++", level: 70, category: "Backend" },
-    { name: "SQL", level: 85, category: "Backend" },
-    { name: "IoT", level: 85, category: "Tools" },
+    { name: "JavaScript", level: 70, category: "Frontend" },
     { name: "Git/GitHub", level: 90, category: "Tools" },
-    { name: "English", level: 90, category: "Tools" },
+    { name: "Azure DevOps", level: 65, category: "Tools" },
+    { name: "English", level: 80, category: "Tools" },
   ];
 
   const filteredSkills =
@@ -23,7 +27,7 @@ export const Skills = () => {
       ? skills
       : skills.filter((skill) => skill.category === filter);
 
-  const categories = ["All", "Frontend", "Backend", "AI/ML", "Tools"];
+  const categories = ["All", "Frontend", "Mobile", "Backend", "AI/ML", "Tools"];
 
   return (
     <section

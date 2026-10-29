@@ -33,10 +33,12 @@ export const Sobre = () => {
           </p>
 
           <p>
-            I’m currently taking the course <span className="text-white font-medium">“Artificial Intelligence with Real Applications”</span> by 
-            <span className="text-white font-medium"> ESPX/Harvard</span>, while also completing programs at  
-            <span className="text-white font-medium"> FIAP </span>and  
-            <span className="text-white font-medium"> Alura</span>, focused on Machine Learning.
+            I won the <span className="text-white font-medium">Google Gen AI Hackathon at FIAP</span> in 2025 with <span className="text-white font-medium">Adapt.AI</span>, an accessibility platform that adapts educational content for neurodivergent students.
+            I also took <span className="text-white font-medium">1st place at the Desafio Next (FIAP × TOTVS)</span> with the <span className="text-white font-medium">SYND</span> project, an AI tool that turns meeting transcripts into structured sales data.
+          </p>
+
+          <p>
+            I’m currently completing Google’s Agent Development Kit (ADK) course and programs at <span className="text-white font-medium">FIAP</span>, focused on Machine Learning.
           </p>
 
           <p>
